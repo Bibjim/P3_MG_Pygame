@@ -14,8 +14,8 @@ ICONE_WINDOW = "ressource/MacGyver.png"
 
 #formatting the size of the game map
 NBR_SPRITE = 15
-SIZE_SPRITE = 15
-SIZE_WINDOW = NBR_SPRITE * SIZE_SPRITE
+CELL_SIZE = 40
+SIZE_WINDOW = NBR_SPRITE * CELL_SIZE
 
 #list of images of the characters in the game
 MACGYVER_IMAGE = "ressource/MacGyver.png"
