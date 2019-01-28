@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: Utf-8 -*
+
 """
 Definition of game constants:
     - formatting the game window
@@ -9,7 +12,7 @@ Definition of game constants:
 
 #formatting the game window
 TITLE_WINDOW = "MacGyver Escape Game"
-ICONE_WINDOW = "ressource/MacGyver.png"
+ICON_WINDOW = "ressource/MacGyver.png"
 ######BACKGROUND_IMAGE = "" à définir
 
 #formatting the size of the game map

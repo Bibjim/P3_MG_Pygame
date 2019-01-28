@@ -26,7 +26,7 @@ class Level:
 			self.structure = structure_level
 
 
-	def Display(self, window):
+	def display_lab(self, window):
 		wall = pygame.image.load(WALL_IMAGE).convert()
 		floor = pygame.image.load(FLOOR_IMAGE).convert()
 		guardian = pygame.image.load(GUARDIAN_IMAGE).convert_alpha()
@@ -77,6 +77,6 @@ class MacGyver:
 					self.y = self.case_y * CELL_SIZE
 		if move == 'down':
 			if self.case_y < (NBR_SPRITE - 1):
-				if self.level.structure[self.case_y+1][self.case_x] != 'm':
+				if self.level.structure[self.case_y+1][self.case_x] != 'w':
 					self.case_y += 1
 					self.y = self.case_y * CELL_SIZE
