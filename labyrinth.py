@@ -3,9 +3,10 @@
 
 
 """Definition of class for the labyrinth"""
-import random
+
 import pygame
 from pygame.locals import *
+
 from constants import Constants
 
 class Labyrinth:
