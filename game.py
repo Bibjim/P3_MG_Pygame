@@ -51,7 +51,7 @@ def main():
 		screen.blit(background, (0, 0))
 		labyrinth.display_labyrinth()
 
-		if labyrinth.sturture[macgyver.mg_cell_y][macgyver.mg_cell_x] == 'G':
+		if labyrinth.sturture[macgyver.mg_pos_y][macgyver.mg_pos_x] == 'G':
 			cont = 0
 
 if __name__ == "__main__":
