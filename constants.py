@@ -1,36 +1,30 @@
 #!/usr/bin/python3
-# -*- coding: Utf-8 -*
+# -*-coding:Utf-8 -*
 
-"""
-Definition of game constants:
-    - formatting the game window
-    - formatting the size of the game map
-    - list of images of the characters in the game
-    - list of images of game objects
-    - list of game structure images
-"""
-class Constants:
-    #formatting the game window
-    TITLE_WINDOW = "MacGyver Escape Game"
-    ICON_WINDOW = "ressource/MacGyver.png"
-    BACKGROUND_IMAGE = "ressource/Background_img.jpg"
+#Size map
+NBR_SPRITE_WIDTH = 15
+NBR_SPRITE_HEIGTH = 16
+WIDTH_SPRITE = 40
+SIZE_SCREEN_WIDTH = NBR_SPRITE_WIDTH * WIDTH_SPRITE
+SIZE_SCREEN_HEIGTH = NBR_SPRITE_HEIGTH * WIDTH_SPRITE
 
-    #formatting the size of the game map
-    NBR_SPRITE = 15
-    SIZE_SPRITE = 40
-    SIZE_WINDOW = NBR_SPRITE * SIZE_SPRITE
+#ressource images
+IMG_ICON = "ressource/MacGyver.png"
+TITLE_GAME = "MacGyver Escape Game"
 
-    #list of images of the characters in the game
-    MACGYVER_IMAGE = "ressource/MacGyver.png"
-    GUARDIAN_IMAGE = "ressource/Gardien.png"
-    OPTIONAL_PERSO_IMAGE = "ressource/personnages.png"
+IMG_BFONT = "ressource/Bfont.png"
+IMG_BACK = "ressource/Background.png"
+IMG_MAC = "ressource/MacGyver.png"
+IMG_GARDIAN = "ressource/Gardien_game.png"
+IMG_FLOOR = "ressource/Floor.png"
+IMG_WALL = "ressource/Wall.png"
+IMG_PLASTIC_TUBE = "ressource/tube_plastique_game.png"
+IMG_ETHER = "ressource/ether_game.png"
+IMG_NEEDLE = "ressource/aiguille_game.png"
+IMG_MACWIN = "ressource/win.png"
+IMG_MACLOOSE = "ressource/loose.png"
 
-    #list of images of game objects
-    NEEDLE_IMAGE = "ressource/aiguille.png"
-    ETHER_IMAGE = "ressource/ether.png"
-    SYRINGE_IMAGE = "ressource/seringe.png"
-    PLASTIC_TUBE_IMAGE = "ressource/tube_plastique.png"
-
-    #list of game structure images
-    WALL_IMAGE = "ressource/Wall.png"
-    FLOOR_IMAGE = "ressource/Floor.png"
+IMG_NO_ITEMS = "ressource/no_items.png"
+IMG_ITEMS_1_3 = "ressource/items1_3.png"
+IMG_ITEMS_2_3 = "ressource/items2_3.png"
+IMG_ITEMS_3_3 = "ressource/items3_3.png"
