@@ -19,16 +19,15 @@ from macgyver import *
 
 def main():
 	"""
-		Initializes the game's interface, window size, name the window
-		and game menu
+	Initializes the game's interface, window size, name the window and game menu
 
-		Main loop of the game:
-		Displays the maze in its various states after the player moves
-		The player recovers the objects simply by moving on them
-		The objects are placed randomly each time the game is loaded
-		A counter indicates the progress of recovery of objects
-		The player wins under the condition to retrieve all the objects and
-		find the goalkeeper to go out otherwise the player loses
+	Main loop of the game:
+	Displays the maze in its various states after the player moves
+	The player recovers the objects simply by moving on them
+	The objects are placed randomly each time the game is loaded
+	A counter indicates the progress of recovery of objects
+	The player wins under the condition to retrieve all the objects and find the
+	goalkeeper to go out otherwise the player loses
 	"""
 
 	pygame.init()

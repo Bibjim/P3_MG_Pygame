@@ -9,11 +9,20 @@ from pygame.locals import*
 from constants import*
 
 class Load_structure_map:
+	"""
+	Class that creates the labyrinth structure, opening the file
+	.txt source, creating a list of list to generate a 2D map according to
+	2 axes. In this map, the use of the Random module is necessary for
+	generate 3 objects randomly in the labyrinth corridors
+	Loading images according to the structure of the map and the location of objects
+	"""
 	def __init__(self, file):
+		#initialization of the source file and the structure of the labyrinth
 		self.file = file
 		self.structure = 0
 
 	def load_map(self):
+		#Opening map elements in a list
 		list_objets = 1
 		with open(self.file, "r") as file:
 			structure_map = []
@@ -24,6 +33,7 @@ class Load_structure_map:
 						line_map.append(sprite)
 				structure_map.append(line_map)
 
+		#Random placement of objects in labyrinth structure
 		while list_objets < 4:
 			item_x = random.randint(0, NBR_SPRITE_WIDTH - 1)
 			item_y = random.randint(0, NBR_SPRITE_WIDTH - 1)
@@ -33,7 +43,8 @@ class Load_structure_map:
 			self.structure = structure_map
 
 	def load_structure(self, screen):
-		
+		#Opening images corresponding to the structure of the labyrinth
+		#Scale images to the size of a sprite
 		FLOOR = pygame.image.load(IMG_FLOOR).convert()
 		FLOOR = pygame.transform.scale(FLOOR, (40, 40))
 
@@ -52,6 +63,7 @@ class Load_structure_map:
 		ITEM_3 = pygame.image.load(IMG_PLASTIC_TUBE).convert()
 		ITEM_3 = pygame.transform.scale(ITEM_3, (40, 40))
 
+		#Formatting the labyrinth structure with the images
 		structure_line = 0
 		for line in self.structure:
 			structure_sprite = 0

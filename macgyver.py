@@ -10,7 +10,17 @@ from structure_lab import*
 
 
 class Character:
+	"""
+	Player creation class, initialization of his position on the map
+	Management of the player's move so that he can move this box
+	in the structure of the labyrinth
+	Conditions of movement limited by walls
+	"""
+
 	def __init__(self, MacGyver, level):
+		#Initialization of the player in the map
+		#Opening the player's image
+		#Scale image to the size of a sprite
 		self.MacGyver = pygame.image.load(IMG_MAC).convert_alpha()
 		self.MacGyver = pygame.transform.scale(self.MacGyver, (40, 40))
 		self.mg_x = 0
@@ -23,7 +33,7 @@ class Character:
 		self.item_loot = []
 
 	def move(self, direction):
-
+		#Determine the player's position according to the desired direction
 		mg_pos = 0
 		if direction == 'right':
 			if self.mg_x < (NBR_SPRITE_WIDTH - 1):
@@ -62,7 +72,7 @@ class Character:
 					self.y = self.mg_y * WIDTH_SPRITE
 					item = self.level.structure[self.mg_y][self.mg_x]
 					if item != 'f' and item != 'G':
-						basket_content = item
+						mg_pos = item
 						self.level.structure[self.mg_y][self.mg_x] = 'f'
 		#The items collected are added to the list
 		if mg_pos != 0 and mg_pos != 'G':
