@@ -1,13 +1,13 @@
 """Constants of game"""
 
 #Size map
-#Nombers of sprite dans la largeur
+#Nombers of sprite in the width
 NBR_SPRITE_WIDTH = 15
-#Nombers of sprite dans la hauteur
+#Nombers of sprite in the height
 NBR_SPRITE_HEIGTH = 16
 #Taille du sprite
 WIDTH_SPRITE = 40
-#Calcule la largeur et la hauteur de la fenêtre
+#Calculates the width and height of the window
 SIZE_SCREEN_WIDTH = NBR_SPRITE_WIDTH * WIDTH_SPRITE
 SIZE_SCREEN_HEIGTH = NBR_SPRITE_HEIGTH * WIDTH_SPRITE
 
@@ -20,6 +20,7 @@ IMG_MAC = "ressource/MacGyver.png"
 IMG_GARDIAN = "ressource/Gardien_game.png"
 IMG_FLOOR = "ressource/Floor.png"
 IMG_WALL = "ressource/Wall.png"
+IMG_DEPARTURE = "ressource/floorstart.png"
 
 IMG_MACWIN = "ressource/win.png"
 IMG_MACLOOSE = "ressource/loose.png"
